@@ -248,3 +248,28 @@ class AllWarSurrenderMsg(BaseNotification):
     declared_by_id: Optional[int] = Field(alias="declaredByID")
     war_declared_against: Optional[str]
     war_declared_by: Optional[str]
+
+
+models = {
+    "NPCStandingsLost": NPCStandingsLost,
+    "TowerResourceAlertMsg": TowerResourceAlertMsg,
+    "AllAnchoringMsg": AllAnchoringMsg,
+    "EntosisCaptureStarted": EntosisCaptureStarted,
+    "SovAllClaimAquiredMsg": SovAllClaimAquiredMsg,
+    "SovAllClaimLostMsg": SovAllClaimLostMsg,
+    "SovCommandNodeEventStarted": SovCommandNodeEventStarted,
+    "SovStructureDestroyed": SovStructureDestroyed,
+    "SovStructureReinforced": SovStructureReinforced,
+    "StructureAnchoring": StructureAnchoring,
+    "StructureDestroyed": StructureDestroyed,
+    "StructureFuelAlert": StructureFuelAlert,
+    "StructureLostArmor": StructureLostArmor,
+    "StructureLostShields": StructureLostShields,
+    "StructureUnderAttack": StructureUnderAttack,
+    "StructureWentHighPower": StructureWentHighPower,
+    "StructureWentLowPower": StructureWentLowPower,
+    "TowerAlertMsg": TowerAlertMsg,
+    "AllWarDeclaredMsg": AllWarDeclaredMsg,
+    "AllWarInvalidatedMsg": AllWarInvalidatedMsg,
+    "AllWarSurrenderMsg": AllWarSurrenderMsg,
+}
