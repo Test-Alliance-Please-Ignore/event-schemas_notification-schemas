@@ -250,6 +250,19 @@ class AllWarSurrenderMsg(BaseNotification):
     war_declared_by: Optional[str]
 
 
+class OwnershipTransferred(BaseNotification):
+    character_id: int = Field(alias="charID")
+    new_owner_corp: int = Field(alias="newOwnerCorpID")
+    old_owner_corp: int = Field(alias="oldOwnerCorpID")
+    solar_system_id: int = Field(alias="solarSystemID")
+    region_id: Optional[int]
+    constellation_id: Optional[int]
+    structure_id: int = Field(alias="structureID")
+    structure_name: str = Field(alias="structureName")
+    structure_type_id: int = Field(alias="structureTypeID")
+    structure_type: str = Optional[str]
+
+
 models = {
     "NPCStandingsLost": NPCStandingsLost,
     "TowerResourceAlertMsg": TowerResourceAlertMsg,
@@ -272,4 +285,5 @@ models = {
     "AllWarDeclaredMsg": AllWarDeclaredMsg,
     "AllWarInvalidatedMsg": AllWarInvalidatedMsg,
     "AllWarSurrenderMsg": AllWarSurrenderMsg,
+    "OwnershipTransferred": OwnershipTransferred,
 }
