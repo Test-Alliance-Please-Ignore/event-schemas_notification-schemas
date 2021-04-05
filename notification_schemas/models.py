@@ -12,6 +12,7 @@ class BaseNotification(BaseModel):
     timestamp: datetime
     auth_corp_ticker: str
     auth_corp_name: str
+    auth_character_id: Optional[int]
     type_: str = Field(alias="type")
 
     class Config:
