@@ -55,7 +55,6 @@ class AllAnchoringMsg(BaseNotification):
     constellation_id: Optional[int]
     moon_location: Optional[str]
     anchored_by: Optional[str]
-    structure_type: Optional[str]
 
 
 class EntosisCaptureStarted(BaseNotification):
@@ -227,7 +226,6 @@ class TowerAlertMsg(BaseNotification):
     attacker: Optional[str]
     structure_health: Optional[str]
     moon_location: Optional[str]
-    structure_type: Optional[str]
 
 
 class AllWarDeclaredMsg(BaseNotification):
